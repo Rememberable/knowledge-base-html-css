@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Navigation with Search</title>
+    <link rel="stylesheet" href="base.css"/>
+    <style>
+        header {
+            background-color: #262626;
+        }
+
+        nav {
+            max-width: 64rem;
+            margin: auto;
+            padding: 1.5rem;
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        a {
+            color: white;
+        }
+
+        input {
+            flex: 100%;
+        }
+
+        @media screen and (min-width: 630px) {
+            nav {
+                flex-wrap: nowrap;
+            }
+
+            input {
+                flex: auto;
+            }
+
+            a {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <img src="images/logo.svg" height="35" alt="Logo"/>
+        <a href="#">Create Account</a>
+        <input type="text" placeholder="Search..." class="search"/>
+    </nav>
+</header>
+</body>
+</html>
